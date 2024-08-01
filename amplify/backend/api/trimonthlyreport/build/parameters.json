@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "trimonthlyreport",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-trimonthlyreport-dev-91e9d-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/0bf53bbedaf78507a1dc6c09cad43992cd6acd16"
+}

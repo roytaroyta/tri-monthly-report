@@ -1,0 +1,117 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-trimonthlyreport-dev-91e9d-authRole",
+      "UnauthRoleArn": "arn:aws:iam::215705143854:role/amplify-trimonthlyreport-dev-91e9d-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::215705143854:role/amplify-trimonthlyreport-dev-91e9d-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-trimonthlyreport-dev-91e9d-deployment",
+      "UnauthRoleName": "amplify-trimonthlyreport-dev-91e9d-unauthRole",
+      "StackName": "amplify-trimonthlyreport-dev-91e9d",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:215705143854:stack/amplify-trimonthlyreport-dev-91e9d/d4b83510-3b4c-11ef-98f8-0624d2a2d575",
+      "AmplifyAppId": "d2r2p1z4acpq85"
+    }
+  },
+  "auth": {
+    "trimonthlyreport7616aa3b": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-trimonthlyreport-dev-91e9d-deployment/amplify-cfn-templates/auth/trimonthlyreport7616aa3b-cloudformation-template.json",
+        "logicalId": "authtrimonthlyreport7616aa3b"
+      },
+      "lastPushTimeStamp": "2024-07-14T00:44:08.749Z",
+      "output": {
+        "UserPoolId": "ap-northeast-1_9ejjsByMg",
+        "AppClientIDWeb": "6nqbmpctsir5ns1sv9laaaie7d",
+        "AppClientID": "d9400u3ed0s2aucsu5fclpeo2",
+        "IdentityPoolId": "ap-northeast-1:4789bd50-96b9-4df4-97f3-0640732475f6",
+        "UserPoolArn": "arn:aws:cognito-idp:ap-northeast-1:215705143854:userpool/ap-northeast-1_9ejjsByMg",
+        "IdentityPoolName": "trimonthlyreport7616aa3b_identitypool_7616aa3b__dev",
+        "UserPoolName": "trimonthlyreport7616aa3b_userpool_7616aa3b"
+      },
+      "lastPushDirHash": "FhQNMV72oyTc6k6v0ou2uEHpRqc="
+    }
+  },
+  "api": {
+    "trimonthlyreport": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "ubwb5zasovejzixjqqdrzgsyvm",
+        "GraphQLAPIEndpointOutput": "https://xibthlpc4bcmtmhwpz55rnjk64.appsync-api.ap-northeast-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-vjr4xd4ngvawdotp5kjlhjxpym"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-trimonthlyreport-dev-91e9d-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apitrimonthlyreport"
+      },
+      "lastPushTimeStamp": "2024-07-14T00:44:09.841Z",
+      "lastPushDirHash": "2gLXS1CY80y7X4tLmPQ1nFFtugg="
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "providerPlugin": "awscloudformation",
+      "type": "manual",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-trimonthlyreport-dev-91e9d-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+        "logicalId": "hostingamplifyhosting"
+      },
+      "lastPushTimeStamp": "2024-07-14T00:44:08.754Z",
+      "output": {},
+      "lastPushDirHash": "Jg1WAxKWtfUeTDr15agJGy0eCTA="
+    }
+  },
+  "storage": {
+    "dynamof98f1681": {
+      "service": "DynamoDB",
+      "providerPlugin": "awscloudformation",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-trimonthlyreport-dev-91e9d-deployment/amplify-cfn-templates/storage/dynamof98f1681-cloudformation-template.json",
+        "logicalId": "storagedynamof98f1681"
+      },
+      "lastPushTimeStamp": "2024-07-14T00:44:09.841Z",
+      "output": {
+        "PartitionKeyName": "test",
+        "Region": "ap-northeast-1",
+        "Arn": "arn:aws:dynamodb:ap-northeast-1:215705143854:table/dynamof98f1681-dev",
+        "StreamArn": "arn:aws:dynamodb:ap-northeast-1:215705143854:table/dynamof98f1681-dev/stream/2024-07-14T00:41:44.827",
+        "PartitionKeyType": "S",
+        "Name": "dynamof98f1681-dev"
+      },
+      "lastPushDirHash": "CEZGWCJtPQB3cgjXDMOM27VlhHI="
+    }
+  }
+}

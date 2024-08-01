@@ -1,0 +1,10 @@
+{
+  "resourceName": "dynamof98f1681",
+  "tableName": "dynamof98f1681",
+  "partitionKey": {
+    "fieldName": "test",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

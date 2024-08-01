@@ -1,0 +1,10 @@
+# overwrite: true
+# schema: "amplify/backend/api/trimonthlyreport/schema.graphql"
+# documents: "src/**/*.graphql"
+# config:
+#   camelCasedEnums: true
+# generates:
+#   src/API.ts:
+#     plugins:
+#       - "typescript"
+#       - "typescript-operations"

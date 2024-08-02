@@ -5,8 +5,8 @@ import "@aws-amplify/ui-react/styles.css";
 import awsconfig from './aws-exports';
 //import { AuthUser } from '@aws-amplify/ui-components';
 import { CognitoUser } from 'amazon-cognito-identity-js';
-import AdminDashboard from './components/AdminDashboard';
-import UserDashboard from './components/UserDashboard';
+import AdminDashboard from './components/pages/admin/AdminDashboard';
+import UserDashboard from './components/pages/user/UserDashboard';
 //import { Translations } from '@aws-amplify/ui-components';
 
 Amplify.configure(awsconfig);

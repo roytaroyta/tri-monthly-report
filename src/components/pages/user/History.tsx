@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { generateClient } from 'aws-amplify/api';
-import { monthlyReportsByEmailAndReportMonth } from '../../graphql/queries';
+import { monthlyReportsByEmailAndReportMonth } from '../../../graphql/queries';
 import { Grid, Typography } from '@mui/material';
 
 const client = generateClient();
